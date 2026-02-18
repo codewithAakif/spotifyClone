@@ -67,7 +67,14 @@ nav ul .logo span{
     cursor: pointer;
 }
 #mastersongplay{
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
+    color: blue;
+}
+#next{
+    color: green;
+}
+#previous{
+    color: yellow;
 }
 .songitem{
     background-color: white;
