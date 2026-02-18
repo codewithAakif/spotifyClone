@@ -6,6 +6,7 @@ font-family: sans-serif;
 }
 body{
     background-color: antiquewhite;
+    overflow: hidden;
 }
 /* Header Section */
 nav ul{
@@ -37,7 +38,7 @@ nav ul .logo span{
 /* Main Section */
 .container{
     min-height: 70vh;
-    background-color: black;
+    background-color: rgb(85, 82, 82);
     color: white;
     margin: 20px auto;
     width: 70vw;
@@ -59,8 +60,47 @@ nav ul .logo span{
 }
 #progressBar{
     width: 80vw;
+    cursor: pointer;
 }
 .icons{
     margin-top: 15px;
     cursor: pointer;
+}
+#mastersongplay{
+    transition: all .3s ease-in;
+}
+.songitem{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.songitem img{
+    height: 30px;
+    width: 40px;
+    background-size: cover;
+
+}
+.timestamp{
+    padding: 0 15px;
+}
+.songcontainer{
+    width: 50%;
+    height: 350px;
+    overflow-y: scroll;
+    scrollbar-color: inherit;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: 0.3s ease-in;
 }
