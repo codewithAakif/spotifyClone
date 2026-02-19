@@ -114,7 +114,7 @@ document.getElementById("next").addEventListener("click", () => {
         mastersongplay.classList.remove("fa-play");
         mastersongplay.classList.add("fa-pause")
         makeallplay();
-        document.getElementsByClassName("songitemplay")[songindex].classList.replace("fa-play", "fa-pause")
+        document.getElementsByClassName("songitemplay")[songindex].classList.replace("fa-play", "fa-pause");
         updateSongInfo();
     }
 });
